@@ -1,3 +1,47 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+/* TODO: move all to tailwind ? */
+.main-bg {
+    background-image:
+            radial-gradient(circle at 0% 0%, transparent 70%, #0a0f0d 100%),
+            radial-gradient(circle at 100% 0%, transparent 70%, #0a0f0d 100%),
+            radial-gradient(circle at 0% 100%, transparent 70%, #0a0f0d 100%),
+            radial-gradient(circle at 100% 100%, transparent 70%, #0a0f0d 100%),
+            linear-gradient(to right, #0b1823, #0b1823);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hanging-sign-container {
+    position: relative;
+    overflow: visible;
+}
+
+.hanging-sign {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: sway 4s ease-in-out infinite;
+    opacity: 40%;
+    transition: opacity 0.8s ease, width 0.8s cubic-bezier(.66,.02,.44,.97);
+    z-index: 1;
+}
+
+.hanging-sign:hover {
+    opacity: 1;
+    z-index: 1000;
+    width: 500px;
+}
+
+@keyframes sway {
+    0%, 100% {
+        transform: translateX(-50%) rotate(-3deg);
+    }
+    50% {
+        transform: translateX(-50%) rotate(3deg);
+    }
+}
