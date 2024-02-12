@@ -10,10 +10,21 @@
             radial-gradient(circle at 100% 0%, transparent 70%, #0a0f0d 100%),
             radial-gradient(circle at 0% 100%, transparent 70%, #0a0f0d 100%),
             radial-gradient(circle at 100% 100%, transparent 70%, #0a0f0d 100%),
-            linear-gradient(to right, #0b1823, #0b1823);
+            linear-gradient(to right, #132b3f, #132b3f);
     background-size: cover;
     background-attachment: fixed;
 }
+
+.section-bg {
+    background-image:
+            radial-gradient(circle at 0% 0%, transparent 70%, #0f2231 100%),
+            radial-gradient(circle at 100% 0%, transparent 70%, #0f2231 100%),
+            radial-gradient(circle at 0% 100%, transparent 70%, #0f2231 100%),
+            radial-gradient(circle at 100% 100%, transparent 70%, #0f2231 100%),
+            linear-gradient(to right, #132b3f, #132b3f);
+    background-size: cover;
+}
+
 
 .hanging-sign-container {
     position: relative;
@@ -31,11 +42,11 @@
     z-index: 1;
 }
 
-.hanging-sign:hover {
-    opacity: 1;
-    z-index: 1000;
-    width: 500px;
-}
+/*.hanging-sign:hover {*/
+/*    opacity: 1;*/
+/*    z-index: 1000;*/
+/*    width: 500px;*/
+/*}*/
 
 @keyframes sway {
     0%, 100% {
