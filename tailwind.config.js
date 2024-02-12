@@ -11,7 +11,7 @@ module.exports = {
                 deepblack: '#0a0f0d',
             },
             boxShadow: {
-                'light': '0 0 4px 2px rgba(255, 255, 255, 0.2)'
+                'light': '0 0 4px 2px rgba(255, 255, 255, 0.2)',
             }
         },
     },
