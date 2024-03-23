@@ -43,47 +43,74 @@ export default function Home() {
                 </Section>
                 <div className="flex flex-row justify-between gap-x-12 h-full">
                     <div className="flex flex-col gap-y-4 w-1/4">
-                        <Section className="h-1/3">
-                            <div>My Main Info</div>
+                        <Section className="h-2/3">
+                            <SectionTitle>Info</SectionTitle>
+                            <div className="flex flex-col text-left">
+                                <div>text1</div>
+                                <div>text2</div>
+                            </div>
                         </Section>
                         <Section className="h-1/3">
-                            <div>My Add. Info</div>
-                        </Section>
-                        <Section className="h-1/3">
-                            <div>Portal to /v2/</div>
+                            <SectionTitle>Portal to /v2/</SectionTitle>
                         </Section>
                     </div>
                     <div className="flex flex-col gap-y-4 w-1/2">
                         <Section className="h-2/3">
-                            <div>Work Experience</div>
+                            <SectionTitle>Work Experience</SectionTitle>
                         </Section>
                         <Section className="h-1/3">
                             <SectionTitle>Skills</SectionTitle>
-                            <div className="flex gap-3 justify-center">
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
-                                <Icon src="/skills/python_icon.png" alt="Python" text="Python" width={48} height={48}/>
+                            <div className="flex flex-col gap-3">
+                                <div className="flex gap-3 justify-center">
+                                    <Icon href="https://www.python.org/"
+                                          src="/skills/python_icon.png" alt="Python"
+                                          text="Python" width={48} height={48}
+                                    />
+                                    <Icon href="https://www.djangoproject.com/"
+                                          src="/skills/django_icon.png" alt="Django"
+                                          text="Django" width={48} height={48}
+                                    />
+                                    <Icon href="https://www.django-rest-framework.org/"
+                                          src="/skills/drf_icon.png" alt="DRF Icon"
+                                          text="Django Rest Framework" width={48} height={48}
+                                    />
+                                    <Icon href="https://fastapi.tiangolo.com/"
+                                          src="/skills/fastapi_icon.png" alt="FastAPI"
+                                          text="FastAPI" width={48} height={48}
+                                    />
+                                </div>
+                                <div className="flex gap-3 justify-center">
+                                    <Icon href="https://www.javascript.com/"
+                                          src="/skills/js_icon.png" alt="JavaScript"
+                                          text="JavaScript" width={48} height={48}
+                                    />
+                                    <Icon href="https://www.typescriptlang.org/"
+                                          src="/skills/ts_icon.png" alt="TypeScript"
+                                          text="TypeScript" width={48} height={48}
+                                    />
+                                    <Icon src="/skills/html_icon.png" alt="HTML"
+                                          text="HTML" width={48} height={48}
+                                    />
+                                    <Icon src="/skills/css_icon.png" alt="CSS"
+                                          text="CSS" width={48} height={48}
+                                    />
+
+                                </div>
                             </div>
                         </Section>
                     </div>
                     <div className="flex flex-col gap-y-4 w-1/4">
                         <Section className="h-1/4">
-                            <div>Education</div>
+                            <SectionTitle>Education</SectionTitle>
                         </Section>
                         <Section className="h-1/4">
-                            <div>Certificates</div>
+                            <SectionTitle>Certificates</SectionTitle>
                         </Section>
                         <Section className="h-1/4">
-                            <div>Languages</div>
+                            <SectionTitle>Languages</SectionTitle>
                         </Section>
                         <Section className="h-1/4">
-                            <div>Interests</div>
+                            <SectionTitle>Interests</SectionTitle>
                         </Section>
                     </div>
                 </div>
