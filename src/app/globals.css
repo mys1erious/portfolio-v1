@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 
-/* TODO: move all to tailwind ? */
 .main-bg {
     background-image:
             radial-gradient(circle at 0% 0%, transparent 70%, #0a0f0d 100%),
@@ -33,7 +32,7 @@
 
 .hanging-sign {
     position: absolute;
-    top: 0;
+    top: -15px;
     left: 50%;
     transform: translateX(-50%);
     animation: sway 4s ease-in-out infinite;
@@ -42,11 +41,10 @@
     z-index: 1;
 }
 
-/*.hanging-sign:hover {*/
-/*    opacity: 1;*/
-/*    z-index: 1000;*/
-/*    width: 500px;*/
-/*}*/
+.hanging-sign:hover {
+    opacity: 1;
+    z-index: 1000;
+}
 
 @keyframes sway {
     0%, 100% {
