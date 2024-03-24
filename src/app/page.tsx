@@ -5,22 +5,23 @@ import Section from "@/app/components/Section";
 import Icon from "@/app/components/Icon";
 import SectionTitle from "@/app/components/SectionTitle";
 import Portal from "@/app/components/Portal";
+import Language from "@/app/components/Language";
 
 
 // 'rsc' for components
 export default function Home() {
     return (
-        <main className="main-bg min-h-screen text-white text-center">
+        <main className="main-bg min-h-screen text-white text-center overflow-x-hidden">
             <div className="hanging-sign-container">
                 <Image className="hanging-sign"
                        src="/mys1erious_sign.png" alt="mys1erious sign"
                        width={120} height={120}/>
             </div>
-            <div className="flex flex-col py-[110px] px-[10%] gap-y-8 lg:h-screen">
-                <Section className="p-0">
-                    <div className="my-2 container mx-auto flex justify-center items-center sm:justify-end">
+            <div className="flex flex-col gap-y-8 pt-32 px-[5%] sm:px-[10%] lg:px-[1%] 2xl:px-[10%] lg:h-screen lg:py-32">
+                <Section className="p-2">
+                    <div className="container flex justify-center items-center sm:justify-end">
                         <nav>
-                            <ul className="flex space-x-4 lg:mr-10">
+                            <ul className="flex space-x-4 sm:mr-10">
                                 <Icon
                                     href="https://github.com/mys1erious"
                                     src="/socials/github_icon.png" alt="Github"
@@ -41,27 +42,27 @@ export default function Home() {
                         </nav>
                     </div>
                 </Section>
-                <div className="flex flex-col justify-between gap-x-12 lg:h-full lg:flex-row">
+                <div className="flex flex-col justify-between gap-x-4 gap-y-4 lg:min-h-full lg:flex-row 2xl:gap-x-12">
                     <div className="flex flex-col gap-y-4 lg:w-1/4">
-                        <Section className="lg:h-1/2">
+                        <Section className="p-4">
                             <SectionTitle>Info</SectionTitle>
                             <div className="flex flex-col text-left">
                                 <div>text1</div>
                                 <div>text2</div>
                             </div>
                         </Section>
-                        <div className="flex flex-col mb-4 lg:h-1/2 lg:mb-0">
-                            <div>(in dev)</div>
-                            <div className="flex justify-center items-center">
-                                <Portal/>
-                            </div>
-                        </div>
+                        <Section className="p-4">
+                            <SectionTitle>Education</SectionTitle>
+                        </Section>
+                        <Section className="p-4">
+                            <SectionTitle>Certificates</SectionTitle>
+                        </Section>
                     </div>
-                    <div className="flex flex-col gap-y-4 mb-4 lg:w-1/2 lg:mb-0">
-                        <Section className="lg:h-2/3">
+                    <div className="flex flex-col gap-y-4 lg:w-1/2">
+                        <Section className="p-4">
                             <SectionTitle>Work Experience</SectionTitle>
                         </Section>
-                        <Section className="lg:h-1/3">
+                        <Section className="p-4">
                             <SectionTitle>Skills</SectionTitle>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-3 justify-center">
@@ -102,10 +103,6 @@ export default function Home() {
                                           text="Google Cloud"
                                           width={48} height={48}
                                     />
-                                    {/*<Icon href="https://aws.amazon.com/"*/}
-                                    {/*      src="/skills/aws_icon.png" alt="AWS"*/}
-                                    {/*      text="AWS" width={48} height={48}*/}
-                                    {/*/>*/}
                                 </div>
                                 <div className="flex gap-3 justify-center">
                                     <Icon href="https://www.javascript.com/"
@@ -143,18 +140,24 @@ export default function Home() {
                         </Section>
                     </div>
                     <div className="flex flex-col gap-y-4 lg:w-1/4">
-                        <Section className="lg:h-1/4">
-                            <SectionTitle>Education</SectionTitle>
-                        </Section>
-                        <Section className="lg:h-1/4">
-                            <SectionTitle>Certificates</SectionTitle>
-                        </Section>
-                        <Section className="lg:h-1/4">
+                        <Section className="p-4">
                             <SectionTitle>Languages</SectionTitle>
+                            <div className="flex flex-col gap-y-0.5 items-center">
+                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
+                                <Language src="/countries/italy.svg" alt="IT" text="Italian" level="A2"/>
+                                <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
+                                <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
+                            </div>
                         </Section>
-                        <Section className="lg:h-1/4">
+                        <Section className="p-4">
                             <SectionTitle>Interests</SectionTitle>
                         </Section>
+                        <div className="flex flex-col">
+                            <div>(not available right now)</div>
+                            <div className="flex justify-center items-center">
+                                <Portal/>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>

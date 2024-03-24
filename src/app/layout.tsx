@@ -1,8 +1,12 @@
 import type {Metadata} from "next";
-import {Inter} from "next/font/google";
+import {Exo_2} from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({subsets: ["latin"]});
+const mainFont = Exo_2({
+    weight: "400",
+    subsets: ["latin"],
+});
+
 
 export const metadata: Metadata = {
     title: "mys1erious",
@@ -12,7 +16,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: Readonly<{ children: React.ReactNode }>) {
     return (
         <html lang="en">
-        <body className={inter.className}>{children}</body>
+        <body className={mainFont.className}>{children}</body>
         </html>
     );
 }
