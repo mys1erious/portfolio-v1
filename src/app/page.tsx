@@ -6,21 +6,27 @@ import Icon from "@/app/components/Icon";
 import SectionTitle from "@/app/components/SectionTitle";
 import Portal from "@/app/components/Portal";
 import Language from "@/app/components/Language";
+import BgVideo from "@/app/components/BgVideo";
+import BgVideoOpacityControl from "@/app/components/BgVideoOpacityControl";
 
 
 // 'rsc' for components
 export default function Home() {
     return (
-        <main className="main-bg min-h-screen text-white text-center overflow-x-hidden">
+        <main className="main-bg before:fixed before:top-0 before:right-0 before:bottom-0 before:left-0 before:z-[-2]
+            min-h-screen text-white text-center overflow-x-hidden">
+            <BgVideo />
             <div className="hanging-sign-container">
                 <Image className="hanging-sign"
                        src="/mys1erious_sign.png" alt="mys1erious sign"
                        width={120} height={120}/>
             </div>
-            <div className="flex flex-col gap-y-8 pt-32 pb-8 px-[5%] sm:px-[10%] lg:px-[1%] 2xl:px-[10%] lg:min-h-screen">
+            <div
+                className="flex flex-col gap-y-8 pt-32 pb-8 px-[5%] sm:px-[10%] lg:px-[1%] 2xl:px-[10%] lg:min-h-screen">
                 <Section className="p-2">
-                    <div className="container flex justify-center items-center sm:justify-end">
-                        <nav>
+                    <div className="flex flex-col gap-4 items-center sm:flex-row">
+                        <BgVideoOpacityControl/>
+                        <nav className="container flex justify-center items-center sm:justify-end">
                             <ul className="flex space-x-4 sm:mr-10">
                                 <Icon
                                     href="https://github.com/mys1erious"

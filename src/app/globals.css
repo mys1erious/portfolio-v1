@@ -8,7 +8,13 @@
     scrollbar-color: #0b1823 #0a0f0d;
 }
 
-.main-bg {
+html {
+    background: #0a0f0d;
+}
+
+
+.main-bg::before {
+    content: '';
     background-image:
             radial-gradient(circle at 0% 0%, transparent 70%, #0a0f0d 100%),
             radial-gradient(circle at 100% 0%, transparent 70%, #0a0f0d 100%),
@@ -16,6 +22,7 @@
             radial-gradient(circle at 100% 100%, transparent 70%, #0a0f0d 100%),
             linear-gradient(to right, #132b3f, #132b3f);
 }
+
 
 .section-bg {
     background-image:
@@ -58,18 +65,15 @@
 }
 
 
-input[type='range'].language-slider::-webkit-slider-thumb {
-    /*opacity: 0;*/
+input[type='range'].range-slider::-webkit-slider-thumb {
     appearance: none;
     width: 1px;
     height: 20px;
     background: #ffffff;
 }
 
-input[type='range'].language-slider::-moz-range-thumb {
-    /*opacity: 0;*/
+input[type='range'].range-slider::-moz-range-thumb {
     width: 1px;
     height: 20px;
     background: #ffffff;
 }
-
