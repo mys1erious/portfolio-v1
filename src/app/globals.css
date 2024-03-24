@@ -10,8 +10,6 @@
             radial-gradient(circle at 0% 100%, transparent 70%, #0a0f0d 100%),
             radial-gradient(circle at 100% 100%, transparent 70%, #0a0f0d 100%),
             linear-gradient(to right, #132b3f, #132b3f);
-    background-size: cover;
-    background-attachment: fixed;
 }
 
 .section-bg {
@@ -21,7 +19,6 @@
             radial-gradient(circle at 0% 100%, transparent 70%, #0f2231 100%),
             radial-gradient(circle at 100% 100%, transparent 70%, #0f2231 100%),
             linear-gradient(to right, #132b3f, #132b3f);
-    background-size: cover;
 }
 
 
@@ -53,4 +50,20 @@
     50% {
         transform: translateX(-50%) rotate(3deg);
     }
+}
+
+
+input[type='range'].language-slider::-webkit-slider-thumb {
+    /*opacity: 0;*/
+    appearance: none;
+    width: 1px;
+    height: 20px;
+    background: #ffffff;
+}
+
+input[type='range'].language-slider::-moz-range-thumb {
+    /*opacity: 0;*/
+    width: 1px;
+    height: 20px;
+    background: #ffffff;
 }

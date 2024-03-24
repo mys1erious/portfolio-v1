@@ -4,8 +4,10 @@ import Link from "next/link";
 
 const Portal = () => {
     return (
-        <Link href="https://mys1erious.com/v2/" target='_blank'>
-            <Image src="/portal.gif" alt="Portal" width={200} height={200}/>
+        <Link href="https://mys1erious.com/portal/" target='_blank'>
+            <Image src="/portal.gif" alt="Portal" width={200} height={200} priority
+                   placeholder="blur" blurDataURL="/portal_placeholder.png"
+            />
         </Link>
     );
 };
