@@ -4,6 +4,7 @@ import React from 'react';
 import Icon from "@/app/components/Icon";
 import Section from "@/app/components/Section";
 import {languagesByIndex, languagesByCode} from "@/app/constants";
+import RangeInput from "@/app/components/RangeInput";
 
 
 type LanguageProps = {
@@ -43,10 +44,7 @@ const Language = ({src, alt, text, level}: LanguageProps) => {
                         </div>
                     ))}
                 </div>
-                <input type="range" min="0" max="10" value={languageIndex * 2+1} readOnly
-                       className="language-slider appearance-none rounded-3xl h-5 w-full xl:w-48
-                       bg-gradient-to-r from-orange-600 from-10% via-sky-800 via-60% to-sky-500"
-                />
+                <RangeInput min={0} max={10} value={languageIndex * 2+1} readOnly={true}/>
                 {hoverText ?
                     <div className="absolute pointer-events-none bottom-full left-1/2 -translate-x-1/2">
                         <div className="px-3 py-1 bg-black text-sm rounded-3xl whitespace-nowrap">{hoverText}</div>
