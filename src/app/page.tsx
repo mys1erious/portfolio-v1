@@ -17,7 +17,7 @@ export default function Home() {
                        src="/mys1erious_sign.png" alt="mys1erious sign"
                        width={120} height={120}/>
             </div>
-            <div className="flex flex-col gap-y-8 pt-32 px-[5%] sm:px-[10%] lg:px-[1%] 2xl:px-[10%] lg:h-screen lg:py-32">
+            <div className="flex flex-col gap-y-8 pt-32 pb-8 px-[5%] sm:px-[10%] lg:px-[1%] 2xl:px-[10%] lg:min-h-screen">
                 <Section className="p-2">
                     <div className="container flex justify-center items-center sm:justify-end">
                         <nav>
@@ -26,6 +26,11 @@ export default function Home() {
                                     href="https://github.com/mys1erious"
                                     src="/socials/github_icon.png" alt="Github"
                                     text="@mys1erious"
+                                />
+                                <Icon
+                                    href="https://discord.com/"
+                                    src="/socials/discord_icon.png" alt="Discord"
+                                    text="@mysterious8443"
                                 />
                                 <Icon
                                     href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
@@ -61,6 +66,7 @@ export default function Home() {
                     <div className="flex flex-col gap-y-4 lg:w-1/2">
                         <Section className="p-4">
                             <SectionTitle>Work Experience</SectionTitle>
+                            {/*<div className="h-[500px]"></div>*/}
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Skills</SectionTitle>
