@@ -8,7 +8,7 @@ type SectionTitleProps = {
 
 const SectionTitle = ({children}: SectionTitleProps) => {
     return (
-        <div className="text-xl mb-2">
+        <div className="text-xl mb-4">
             {children}
         </div>
     );

@@ -3,6 +3,11 @@
 @tailwind utilities;
 
 
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #0b1823 #0a0f0d;
+}
+
 .main-bg {
     background-image:
             radial-gradient(circle at 0% 0%, transparent 70%, #0a0f0d 100%),
@@ -67,3 +72,4 @@ input[type='range'].language-slider::-moz-range-thumb {
     height: 20px;
     background: #ffffff;
 }
+
