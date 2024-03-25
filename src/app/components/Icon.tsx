@@ -30,7 +30,7 @@ const Icon = ({src, alt, href="", width = 24, height = 24, text="", scaleUpOnHov
                        src={src} alt={alt} width={width} height={height}
                 />
                 <div className="absolute opacity-0 pointer-events-none bottom-full left-1/2 -translate-x-1/2
-                     transition-opacity duration-500 ease-in-out group-hover:opacity-100">
+                     transition-opacity duration-500 ease-in-out group-hover:opacity-100 text-center">
                     <div className="px-3 py-1 bg-black text-sm rounded-3xl whitespace-nowrap">{text}</div>
                     <div className="mt-[-8px] text-gray-600">&#9660;</div>
                 </div>

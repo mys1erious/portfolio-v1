@@ -1,3 +1,6 @@
+export const skillSize = 48;
+
+
 type languageProps = {
     index: number;
     code: string;
