@@ -8,6 +8,7 @@ import Portal from "@/app/components/Portal";
 import Language from "@/app/components/Language";
 import BgVideo from "@/app/components/BgVideo";
 import BgVideoOpacityControl from "@/app/components/BgVideoOpacityControl";
+import Education from "@/app/components/Education";
 
 
 // 'rsc' for components
@@ -30,22 +31,22 @@ export default function Home() {
                             <ul className="flex space-x-4 sm:mr-10">
                                 <Icon
                                     href="https://github.com/mys1erious"
-                                    src="/socials/github_icon.png" alt="Github"
+                                    src="/socials/github.png" alt="Github"
                                     text="@mys1erious"
                                 />
                                 <Icon
                                     href="https://discord.com/"
-                                    src="/socials/discord_icon.png" alt="Discord"
+                                    src="/socials/discord.png" alt="Discord"
                                     text="@mysterious8443"
                                 />
                                 <Icon
                                     href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
-                                    src="/socials/linkedin_icon.png" alt="LinkedIn"
+                                    src="/socials/linkedin.png" alt="LinkedIn"
                                     text="@yevhenii-lavrinovych"
                                 />
                                 <Icon
                                     href="mailto:yevhenii.lavrinovych@gmail.com"
-                                    src="/socials/email_icon.png" alt="Email"
+                                    src="/socials/email.png" alt="Email"
                                     text="yevhenii.lavrinovych@gmail.com"
                                     width={36}
                                 />
@@ -56,14 +57,23 @@ export default function Home() {
                 <div className="flex flex-col justify-between gap-x-4 gap-y-4 lg:min-h-full lg:flex-row 2xl:gap-x-12">
                     <div className="flex flex-col gap-y-4 lg:w-1/4">
                         <Section className="p-4">
-                            <SectionTitle>Info</SectionTitle>
-                            <div className="flex flex-col text-left">
-                                <div>text1</div>
-                                <div>text2</div>
+                            <div className="flex flex-col">
+                                <div className="text-xl">Yevhenii Lavriovych</div>
+                                <div className="text-lg">Software Developer</div>
                             </div>
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Education</SectionTitle>
+                            <div className="flex flex-col items-center text-lg">
+                                <Education href="https://int.krok.edu.ua/"
+                                           src="/university.png" alt="KROK" iconText="KROK"
+                                           university="University of Economics and Law - KROK"
+                                           discipline="Computer Science"
+                                           qualification="Bachelor Graduate"
+                                />
+
+                            </div>
+
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Certificates</SectionTitle>
@@ -72,79 +82,79 @@ export default function Home() {
                     <div className="flex flex-col gap-y-4 lg:w-1/2">
                         <Section className="p-4">
                             <SectionTitle>Work Experience</SectionTitle>
-                            {/*<div className="h-[500px]"></div>*/}
+                            <div className="h-[500px]"></div>
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Skills</SectionTitle>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-3 justify-center">
                                     <Icon href="https://www.python.org/"
-                                          src="/skills/python_icon.png" alt="Python"
+                                          src="/skills/python.png" alt="Python"
                                           text="Python" width={48} height={48}
                                     />
                                     <Icon href="https://www.djangoproject.com/"
-                                          src="/skills/django_icon.png" alt="Django"
+                                          src="/skills/django.png" alt="Django"
                                           text="Django" width={48} height={48}
                                     />
                                     <Icon href="https://www.django-rest-framework.org/"
-                                          src="/skills/drf_icon.png" alt="DRF Icon"
+                                          src="/skills/drf.png" alt="DRF Icon"
                                           text="Django Rest Framework" width={48} height={48}
                                     />
                                     <Icon href="https://fastapi.tiangolo.com/"
-                                          src="/skills/fastapi_icon.png" alt="FastAPI"
+                                          src="/skills/fastapi.png" alt="FastAPI"
                                           text="FastAPI" width={48} height={48}
                                     />
                                     <Icon href="https://www.postgresql.org/"
-                                          src="/skills/postgres_icon2.png" alt="PostgresSQL"
+                                          src="/skills/postgres2.png" alt="PostgresSQL"
                                           text="PostgresSQL" width={48} height={48}
                                     />
                                     <Icon href="https://redis.io/"
-                                          src="/skills/redis_icon.png" alt="Redis"
+                                          src="/skills/redis.png" alt="Redis"
                                           text="Redis" width={48} height={48}
                                     />
                                     <Icon href="https://git-scm.com/"
-                                          src="/skills/git_icon.png" alt="Git"
+                                          src="/skills/git.png" alt="Git"
                                           text="Git" width={48} height={48}
                                     />
                                     <Icon href="https://www.docker.com/"
-                                          src="/skills/docker_icon.png" alt="Docker"
+                                          src="/skills/docker.png" alt="Docker"
                                           text="Docker" width={48} height={48}
                                     />
                                     <Icon href="https://cloud.google.com/"
-                                          src="/skills/google_cloud_icon.png" alt="Google Cloud"
+                                          src="/skills/google_cloud.png" alt="Google Cloud"
                                           text="Google Cloud"
                                           width={48} height={48}
                                     />
                                 </div>
                                 <div className="flex gap-3 justify-center">
                                     <Icon href="https://www.javascript.com/"
-                                          src="/skills/js_icon.png" alt="JavaScript"
+                                          src="/skills/js.png" alt="JavaScript"
                                           text="JavaScript" width={48} height={48}
                                     />
                                     <Icon href="https://www.typescriptlang.org/"
-                                          src="/skills/ts_icon.png" alt="TypeScript"
+                                          src="/skills/ts.png" alt="TypeScript"
                                           text="TypeScript" width={48} height={48}
                                     />
-                                    <Icon src="/skills/html_icon.png" alt="HTML"
+                                    <Icon src="/skills/html.png" alt="HTML"
                                           text="HTML" width={48} height={48}
                                     />
-                                    <Icon src="/skills/css_icon.png" alt="CSS"
+                                    <Icon src="/skills/css.png" alt="CSS"
                                           text="CSS" width={48} height={48}
                                     />
                                     <Icon href="https://react.dev/"
-                                          src="/skills/react_icon.png" alt="React"
+                                          src="/skills/react.png" alt="React"
                                           text="React" width={48} height={48}
                                     />
                                     <Icon href="https://nextjs.org/"
-                                          src="/skills/next_icon.png" alt="Next.js"
+                                          src="/skills/next.png" alt="Next.js"
                                           text="Next.js" width={48} height={48}
                                     />
                                     <Icon href="https://tailwindcss.com/"
-                                          src="/skills/tailwind_icon.png" alt="Tailwind CSS"
+                                          src="/skills/tailwind.png" alt="Tailwind CSS"
                                           text="Tailwind CSS" width={48} height={48}
                                     />
                                     <Icon href="https://www.sencha.com/products/extjs"
-                                          src="/skills/extjs_icon.png" alt="ExtJS"
+                                          src="/skills/extjs.png" alt="ExtJS"
                                           text="ExtJS" width={48} height={48}
                                     />
                                 </div>
@@ -165,7 +175,7 @@ export default function Home() {
                             <SectionTitle>Interests</SectionTitle>
                         </Section>
                         <div className="flex flex-col">
-                            <div>(not available right now)</div>
+                            <div className="text-xs">(not available right now)</div>
                             <div className="flex justify-center items-center">
                                 <Portal/>
                             </div>
