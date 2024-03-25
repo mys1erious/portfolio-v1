@@ -13,10 +13,11 @@ type IconProps = {
     height?: number;
     text?: string;
     scaleUpOnHover?: boolean;
+    rounded?: boolean;
 };
 
 
-const Icon = ({src, alt, href="", width = 24, height = 24, text="", scaleUpOnHover=true}: IconProps) => {
+const Icon = ({src, alt, href="", width = 24, height = 24, text="", scaleUpOnHover=true, rounded=false}: IconProps) => {
     const handleClick = (e: React.MouseEvent) => {
         if (!href) {
             e.preventDefault();
@@ -24,18 +25,21 @@ const Icon = ({src, alt, href="", width = 24, height = 24, text="", scaleUpOnHov
     };
 
     return (
-        <Link href={href} target='_blank' className="relative inline-block" onClick={handleClick}>
-            <div className="group relative">
-                <Image className={`transition-transform duration-200 ease-in-out ${scaleUpOnHover ? 'hover:scale-125': ''}`}
-                       src={src} alt={alt} width={width} height={height}
-                />
-                <div className="absolute opacity-0 pointer-events-none bottom-full left-1/2 -translate-x-1/2
+        <div>
+            <Link href={href} target='_blank' className="relative inline-block" onClick={handleClick}>
+                <div className="group relative">
+                    <Image className={`transition-transform duration-200 ease-in-out 
+                        ${scaleUpOnHover ? 'hover:scale-125' : ''} ${rounded ? 'rounded-full' : ''}`}
+                           src={src} alt={alt} width={width} height={height}
+                    />
+                    <div className="absolute opacity-0 pointer-events-none bottom-full left-1/2 -translate-x-1/2
                      transition-opacity duration-500 ease-in-out group-hover:opacity-100 text-center">
-                    <div className="px-3 py-1 bg-black text-sm rounded-3xl whitespace-nowrap">{text}</div>
-                    <div className="mt-[-8px] text-gray-600">&#9660;</div>
+                        <div className="px-3 py-1 bg-black text-sm rounded-3xl whitespace-nowrap">{text}</div>
+                        <div className="mt-[-8px] text-gray-600">&#9660;</div>
+                    </div>
                 </div>
-            </div>
-        </Link>
+            </Link>
+        </div>
     );
 };
 

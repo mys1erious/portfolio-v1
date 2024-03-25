@@ -45,8 +45,8 @@ html {
     left: 50%;
     transform: translateX(-50%);
     animation: sway 4s ease-in-out infinite;
-    opacity: 40%;
-    transition: opacity 0.8s ease, width 0.8s cubic-bezier(.66,.02,.44,.97);
+    opacity: 0%;
+    transition: opacity 2s ease, width 0.8s cubic-bezier(.66,.02,.44,.97);
     z-index: 1;
 }
 
