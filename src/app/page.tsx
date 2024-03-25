@@ -29,26 +29,22 @@ export default function Home() {
                         <BgVideoOpacityControl/>
                         <nav className="container flex justify-center items-center sm:justify-end">
                             <ul className="flex space-x-4 sm:mr-10">
-                                <Icon
-                                    href="https://github.com/mys1erious"
-                                    src="/socials/github.png" alt="Github"
-                                    text="@mys1erious"
+                                <Icon href="https://github.com/mys1erious"
+                                      src="/socials/github.png" alt="Github"
+                                      text="@mys1erious"
                                 />
-                                <Icon
-                                    href="https://discord.com/"
-                                    src="/socials/discord.png" alt="Discord"
-                                    text="@mysterious8443"
+                                <Icon href="https://discord.com/"
+                                      src="/socials/discord.png" alt="Discord"
+                                      text="@mysterious8443"
                                 />
-                                <Icon
-                                    href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
-                                    src="/socials/linkedin.png" alt="LinkedIn"
-                                    text="@yevhenii-lavrinovych"
+                                <Icon href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
+                                      src="/socials/linkedin.png" alt="LinkedIn"
+                                      text="@yevhenii-lavrinovych"
                                 />
-                                <Icon
-                                    href="mailto:yevhenii.lavrinovych@gmail.com"
-                                    src="/socials/email.png" alt="Email"
-                                    text="yevhenii.lavrinovych@gmail.com"
-                                    width={36}
+                                <Icon href="mailto:yevhenii.lavrinovych@gmail.com"
+                                      src="/socials/email.png" alt="Email"
+                                      text="yevhenii.lavrinovych@gmail.com"
+                                      width={36}
                                 />
                             </ul>
                         </nav>
@@ -58,6 +54,12 @@ export default function Home() {
                     <div className="flex flex-col gap-y-4 lg:w-1/4">
                         <Section className="p-4">
                             <div className="flex flex-col">
+                                <Icon src="/me_mock.jpg" alt="Me"
+                                      text="That's me (or will be me)"
+                                      width={256} height={256}
+                                      scaleUpOnHover={false}
+                                      rounded={true}
+                                />
                                 <div className="text-xl">Yevhenii Lavriovych</div>
                                 <div className="text-lg">Software Developer</div>
                             </div>
@@ -71,9 +73,7 @@ export default function Home() {
                                            discipline="Computer Science"
                                            qualification="Bachelor Graduate"
                                 />
-
                             </div>
-
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Certificates</SectionTitle>
