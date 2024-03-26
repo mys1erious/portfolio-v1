@@ -11,6 +11,8 @@ import BgVideoOpacityControl from "@/app/components/BgVideoOpacityControl";
 import Education from "@/app/components/Education";
 import Certificate from "@/app/components/Certificate";
 import {skillSize} from "@/app/constants";
+import WorkExperience from "@/app/components/WorkExperience";
+import Skill from "@/app/components/Skill";
 
 
 // 'rsc' for components
@@ -98,80 +100,99 @@ export default function Home() {
                     <div className="flex flex-col gap-y-4 lg:w-1/2">
                         <Section className="p-4">
                             <SectionTitle>Work Experience</SectionTitle>
-                            <div className="h-[500px]"></div>
+                            <div>
+                                <WorkExperience skills={['python', 'django', 'postgres', 'react']}/>
+                            </div>
                         </Section>
                         <Section className="p-4">
                             <SectionTitle>Skills</SectionTitle>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-3 justify-center">
-                                <Icon href="https://www.python.org/"
-                                          src="/skills/python.png" alt="Python"
-                                          text="Python" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.python.org/"
+                                           skillName="python"
+                                           src="/skills/python.png" alt="Python"
+                                           text="Python" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.djangoproject.com/"
-                                          src="/skills/django.png" alt="Django"
-                                          text="Django" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.djangoproject.com/"
+                                           skillName="django"
+                                           src="/skills/django.png" alt="Django"
+                                           text="Django" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.django-rest-framework.org/"
-                                          src="/skills/drf.png" alt="DRF Icon"
-                                          text="Django Rest Framework" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.django-rest-framework.org/"
+                                           skillName="drf"
+                                           src="/skills/drf.png" alt="DRF Icon"
+                                           text="Django Rest Framework" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://fastapi.tiangolo.com/"
-                                          src="/skills/fastapi.png" alt="FastAPI"
-                                          text="FastAPI" width={skillSize} height={skillSize}
+                                    <Skill href="https://fastapi.tiangolo.com/"
+                                           skillName="fastapi"
+                                           src="/skills/fastapi.png" alt="FastAPI"
+                                           text="FastAPI" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.postgresql.org/"
-                                          src="/skills/postgres2.png" alt="PostgresSQL"
-                                          text="PostgresSQL" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.postgresql.org/"
+                                           skillName="postgres"
+                                           src="/skills/postgres2.png" alt="PostgresSQL"
+                                           text="PostgresSQL" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://redis.io/"
-                                          src="/skills/redis.png" alt="Redis"
-                                          text="Redis" width={skillSize} height={skillSize}
+                                    <Skill href="https://redis.io/"
+                                           skillName="redis"
+                                           src="/skills/redis.png" alt="Redis"
+                                           text="Redis" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://git-scm.com/"
-                                          src="/skills/git.png" alt="Git"
-                                          text="Git" width={skillSize} height={skillSize}
+                                    <Skill href="https://git-scm.com/"
+                                           skillName="git"
+                                           src="/skills/git.png" alt="Git"
+                                           text="Git" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.docker.com/"
-                                          src="/skills/docker.png" alt="Docker"
-                                          text="Docker" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.docker.com/"
+                                           skillName="docker"
+                                           src="/skills/docker.png" alt="Docker"
+                                           text="Docker" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://cloud.google.com/"
-                                          src="/skills/google_cloud.png" alt="Google Cloud"
-                                          text="Google Cloud"
-                                          width={skillSize} height={skillSize}
+                                    <Skill href="https://cloud.google.com/"
+                                           skillName="google_cloud"
+                                           src="/skills/google_cloud.png" alt="Google Cloud"
+                                           text="Google Cloud"
+                                           width={skillSize} height={skillSize}
                                     />
                                 </div>
                                 <div className="flex gap-3 justify-center">
-                                    <Icon href="https://www.javascript.com/"
-                                          src="/skills/js.png" alt="JavaScript"
-                                          text="JavaScript" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.javascript.com/"
+                                           skillName="js"
+                                           src="/skills/js.png" alt="JavaScript"
+                                           text="JavaScript" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.typescriptlang.org/"
-                                          src="/skills/ts.png" alt="TypeScript"
-                                          text="TypeScript" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.typescriptlang.org/"
+                                           skillName="ts"
+                                           src="/skills/ts.png" alt="TypeScript"
+                                           text="TypeScript" width={skillSize} height={skillSize}
                                     />
-                                    <Icon src="/skills/html.png" alt="HTML"
-                                          text="HTML" width={skillSize} height={skillSize}
+                                    <Skill src="/skills/html.png" alt="HTML"
+                                           skillName="html"
+                                           text="HTML" width={skillSize} height={skillSize}
                                     />
-                                    <Icon src="/skills/css.png" alt="CSS"
-                                          text="CSS" width={skillSize} height={skillSize}
+                                    <Skill src="/skills/css.png" alt="CSS"
+                                           skillName="css"
+                                           text="CSS" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://react.dev/"
-                                          src="/skills/react.png" alt="React"
-                                          text="React" width={skillSize} height={skillSize}
+                                    <Skill href="https://react.dev/"
+                                           skillName="react"
+                                           src="/skills/react.png" alt="React"
+                                           text="React" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://nextjs.org/"
-                                          src="/skills/next.png" alt="Next.js"
-                                          text="Next.js" width={skillSize} height={skillSize}
+                                    <Skill href="https://nextjs.org/"
+                                           skillName="nextjs"
+                                           src="/skills/next.png" alt="Next.js"
+                                           text="Next.js" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://tailwindcss.com/"
-                                          src="/skills/tailwind.png" alt="Tailwind CSS"
-                                          text="Tailwind CSS" width={skillSize} height={skillSize}
+                                    <Skill href="https://tailwindcss.com/"
+                                           skillName="tailwind"
+                                           src="/skills/tailwind.png" alt="Tailwind CSS"
+                                           text="Tailwind CSS" width={skillSize} height={skillSize}
                                     />
-                                    <Icon href="https://www.sencha.com/products/extjs"
-                                          src="/skills/extjs.png" alt="ExtJS"
-                                          text="ExtJS" width={skillSize} height={skillSize}
+                                    <Skill href="https://www.sencha.com/products/extjs"
+                                           skillName="extjs"
+                                           src="/skills/extjs.png" alt="ExtJS"
+                                           text="ExtJS" width={skillSize} height={skillSize}
                                     />
                                 </div>
                             </div>
