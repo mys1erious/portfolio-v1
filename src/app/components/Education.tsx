@@ -17,7 +17,7 @@ type EducationProps = {
 
 const Education = ({src, alt, href, university, discipline, qualification, iconText=''}: EducationProps) => {
     return (
-        <Section className="flex flex-col rounded-xl border-orange-600 px-4 py-2 text-left">
+        <div className="flex flex-col px-4 py-2 text-left">
             <div className="flex flex-shrink-0">
                 <Icon src={src} alt={alt} href={href} text={iconText}
                       width={28} height={28} scaleUpOnHover={false}
@@ -30,7 +30,7 @@ const Education = ({src, alt, href, university, discipline, qualification, iconT
                 <div>Ukraine, Kyiv</div>
                 <div>09/2019-06/2023</div>
             </div>
-        </Section>
+        </div>
     );
 };
 
