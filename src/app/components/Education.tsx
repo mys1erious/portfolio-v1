@@ -17,7 +17,7 @@ type EducationProps = {
 
 const Education = ({src, alt, href, university, discipline, qualification, iconText=''}: EducationProps) => {
     return (
-        <div className="flex flex-col px-4 py-2 text-left">
+        <div className="flex flex-col px-4 py-2 text-left border-b-[1px] pb-2 border-gray-700">
             <div className="flex flex-shrink-0">
                 <Icon src={src} alt={alt} href={href} text={iconText}
                       width={28} height={28} scaleUpOnHover={false}
@@ -26,7 +26,7 @@ const Education = ({src, alt, href, university, discipline, qualification, iconT
             <div className="text-lg">{university}</div>
             <div>{discipline}</div>
             <div>{qualification}</div>
-            <div className="flex justify-between text-xs text-gray-400">
+            <div className="flex justify-between text-sm text-gray-400">
                 <div>Ukraine, Kyiv</div>
                 <div>09/2019-06/2023</div>
             </div>

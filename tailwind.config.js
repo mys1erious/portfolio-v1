@@ -9,6 +9,7 @@ module.exports = {
                 darkblue: '#0b1823',
                 lightblue: '#132b3f',
                 deepblack: '#0a0f0d',
+                redorange: '#ff3b28'
             },
             boxShadow: {
                 'light': '0 0 4px 2px rgba(255, 255, 255, 0.2)',

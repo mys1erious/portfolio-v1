@@ -15,7 +15,10 @@ const BgVideoOpacityControl = () => {
 
     return (
         <div className="w-full max-w-[192px] flex items-center">
-            <RangeInput min={0} max={100} value={opacity * 100} onChange={handleOpacityChange}/>
+            <RangeInput min={0} max={100} value={opacity * 100}
+                        onChange={handleOpacityChange}
+                        className="cursor-pointer"
+            />
         </div>
     );
 }

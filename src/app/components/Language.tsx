@@ -30,11 +30,11 @@ const Language = ({src, alt, text, level}: LanguageProps) => {
     const [hoverText, setHoverText] = React.useState('');
 
     return (
-        <Section className="flex gap-4 items-center justify-center py-1 px-6">
+        <Section className="flex gap-4 items-center py-1 px-6 w-full">
             <div className="flex-shrink-0">
                 <Icon src={src} alt={alt} text={text} width={28} height={28} scaleUpOnHover={false}/>
             </div>
-            <div className="relative h-5">
+            <div className="relative h-5 w-full">
                 <div className="absolute top-0 left-0 w-full h-5">
                     {Array.from({length: 5}).map((_, i) => (
                         <div key={i}>

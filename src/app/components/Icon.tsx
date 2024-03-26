@@ -41,9 +41,9 @@ const Icon = ({
         <div className="flex items-center justify-center">
             <Link href={href} target='_blank' className="relative inline-block" onClick={handleClick}>
                 <div className="group relative">
-                    <Image className={`transition-transform duration-200 ease-in-out 
-                           ${scaleUpOnHover ? 'hover:scale-125' : ''} ${rounded ? 'rounded-full' : ''}
-                           ${border ? 'border ' + borderColor : ''}`}
+                    <Image className={"transition-transform duration-200 ease-in-out" +
+                           ` ${scaleUpOnHover ? 'hover:scale-125' : ''} ${rounded ? 'rounded-full' : ''}` +
+                           ` ${border ? 'border ' + borderColor : ''}`}
                            src={src} alt={alt} width={width} height={height}
                     />
                     {text ?
