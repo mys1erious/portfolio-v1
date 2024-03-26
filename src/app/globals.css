@@ -79,6 +79,11 @@ input[type='range'].range-slider::-moz-range-thumb {
 }
 
 
-.orange-filter:hover {
-    filter: brightness(0) saturate(100%) invert(35%) sepia(65%) saturate(5000%) hue-rotate(-8deg) brightness(100%) contrast(100%);
+.skill-orange-filter {
+    transition: transform 300ms ease-in-out, filter 300ms ease-in-out;
+
+    /* orange-600 */
+    filter: brightness(0) saturate(100%) invert(40%) sepia(52%) saturate(6330%) hue-rotate(10deg) brightness(105%) contrast(91%);
+    /* redorange */
+    /*filter: brightness(0) saturate(100%) invert(32%) sepia(54%) saturate(4154%) hue-rotate(346deg) brightness(102%) contrast(101%);*/
 }

@@ -7,6 +7,6 @@ type BgVideoState = {
 }
 
 export const useBgVideoStore = create<BgVideoState>(set => ({
-    opacity: 0.02,
+    opacity: 0.05,
     setOpacity: (opacity: number) => set(() => ({opacity}))
 }));

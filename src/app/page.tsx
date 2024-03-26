@@ -11,8 +11,9 @@ import BgVideoOpacityControl from "@/app/components/BgVideoOpacityControl";
 import Education from "@/app/components/Education";
 import Certificate from "@/app/components/Certificate";
 import {skillSize} from "@/app/constants";
-import WorkExperience from "@/app/components/WorkExperience";
+import Work from "@/app/components/Work";
 import Skill from "@/app/components/Skill";
+import Project from "@/app/components/Project";
 
 
 // 'rsc' for components
@@ -33,8 +34,9 @@ export default function Home() {
                         <BgVideoOpacityControl/>
                         <nav className="container flex justify-center items-center sm:justify-end">
                             <ul className="flex space-x-4 sm:mr-10">
-                                <Icon href="https://drive.google.com/file/d/1RXG-YH62S_vVHWVVL2B5z8R9j1xgYdCp/view?usp=sharing"
-                                      width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
+                                <Icon href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
+                                      src="/socials/linkedin.png" alt="LinkedIn"
+                                      text="@yevhenii-lavrinovych"
                                 />
                                 <Icon href="https://github.com/mys1erious"
                                       src="/socials/github.png" alt="Github"
@@ -44,9 +46,12 @@ export default function Home() {
                                       src="/socials/discord.png" alt="Discord"
                                       text="@mysterious8443"
                                 />
-                                <Icon href="https://www.linkedin.com/in/yevhenii-lavrinovych/"
-                                      src="/socials/linkedin.png" alt="LinkedIn"
-                                      text="@yevhenii-lavrinovych"
+                                <Icon href="https://www.goodreads.com/user/show/113828325-mys1erious"
+                                      src="/socials/goodreads.png" alt="Goodreads"
+                                      text="@Mys1erious"
+                                />
+                                <Icon href="https://drive.google.com/file/d/1RXG-YH62S_vVHWVVL2B5z8R9j1xgYdCp/view?usp=sharing"
+                                      width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
                                 />
                                 <Icon href="mailto:yevhenii.lavrinovych@gmail.com"
                                       src="/socials/email.png" alt="Email"
@@ -70,21 +75,21 @@ export default function Home() {
                                 <div className="text-lg">Software Developer</div>
                             </div>
                         </Section>
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Education</SectionTitle>
-                            <div className="flex flex-col items-center">
+                            <div className="flex flex-col items-left">
                                 <Education href="https://int.krok.edu.ua/"
                                            src="/university.png" alt="KROK" iconText="KROK"
                                            university="University of Economics and Law - KROK"
                                            discipline="Computer Science"
-                                           qualification="Bachelor Graduate"
+                                           qualification="Bachelor's degree"
                                 />
                             </div>
                         </Section>
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Certificates</SectionTitle>
-                            <div className="flex flex-col items-center">
-                                <div className="flex flex-col gap-2">
+                            <div className="flex flex-col items-left">
+                                <div className="flex flex-col gap-4">
                                     <Certificate
                                         href="https://drive.google.com/file/d/1m4B5di9MuXPmKu_q0J2-e04g6MKw1MDB/view?usp=drive_link"
                                         text="Deep Learning Specialization"
@@ -98,13 +103,61 @@ export default function Home() {
                         </Section>
                     </div>
                     <div className="flex flex-col gap-y-4 lg:w-1/2">
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Work Experience</SectionTitle>
-                            <div>
-                                <WorkExperience skills={['python', 'django', 'postgres', 'react']}/>
+                            <div className="flex flex-col gap-2">
+                                <Work
+                                    href="https://www.linkedin.com/company/adentis-italia/"
+                                    src="/companies/adentis.jpeg" alt="Adentis"
+                                    skills={[
+                                        'python', 'django', 'drf', 'postgres', 'redis', 'git',
+                                        'docker', 'google_cloud', 'js', 'html', 'css', 'extjs'
+                                    ]}
+                                    position="Fullstack Developer"
+                                    name="Adentis Italia"
+                                    type="Full-time"
+                                    dateFrom={new Date(2023, 2)}
+                                    dateTo={new Date()}
+                                    location="Italy, Milan, Remote"
+                                    features={[
+                                        'New features',
+                                        'Code-base improvement',
+                                        'Performance optimization',
+                                    ]}
+                                />
+                                <Work
+                                    href="https://www.linkedin.com/company/meduzzen/"
+                                    githubHref="https://github.com/mys1erious/meduzzen-knowledge-control"
+                                    src="/companies/meduzzen.jpeg" alt="Meduzzen"
+                                    skills={['python', 'fastapi', 'postgres', 'redis', 'git', 'docker', 'aws']}
+                                    position="Backend Developer"
+                                    name="Meduzzen"
+                                    type="Internship"
+                                    dateFrom={new Date(2023, 1)}
+                                    dateTo={new Date(2023, 2)}
+                                    location="Ukraine, Remote"
+                                    features={[
+                                        'API for Employee Knowledge Control',
+                                        'Companies with quizzes for employees',
+                                        'Data analysis on quiz attempts',
+                                        'Data export',
+                                    ]}
+                                />
+                                <Work
+                                    href="https://www.linkedin.com/company/ferrero/"
+                                    src="/companies/ferrero.jpeg" alt="Ferrero"
+                                    skills={['python', 'django', 'drf', 'git']}
+                                    position="Unity AR App Developer"
+                                    name="Ferrero"
+                                    type="Part-time"
+                                    dateFrom={new Date(2021, 7)}
+                                    dateTo={new Date(2021, 9)}
+                                    location="Ukraine, Remote"
+                                    features={['Simple jwt token authentication']}
+                                />
                             </div>
                         </Section>
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Skills</SectionTitle>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-3 justify-center">
@@ -148,12 +201,6 @@ export default function Home() {
                                            src="/skills/docker.png" alt="Docker"
                                            text="Docker" width={skillSize} height={skillSize}
                                     />
-                                    <Skill href="https://cloud.google.com/"
-                                           skillName="google_cloud"
-                                           src="/skills/google_cloud.png" alt="Google Cloud"
-                                           text="Google Cloud"
-                                           width={skillSize} height={skillSize}
-                                    />
                                 </div>
                                 <div className="flex gap-3 justify-center">
                                     <Skill href="https://www.javascript.com/"
@@ -195,20 +242,46 @@ export default function Home() {
                                            text="ExtJS" width={skillSize} height={skillSize}
                                     />
                                 </div>
+                                <div className="flex gap-3 justify-center">
+                                    <Skill href="https://cloud.google.com/"
+                                           skillName="google_cloud"
+                                           src="/skills/google_cloud.png" alt="Google Cloud"
+                                           text="Google Cloud"
+                                           width={skillSize} height={skillSize}
+                                    />
+                                    <Skill href="https://aws.amazon.com/"
+                                           skillName="aws"
+                                           src="/skills/aws.png" alt="AWS"
+                                           text="AWS"
+                                           width={skillSize} height={skillSize}
+                                    />
+                                </div>
+                            </div>
+                        </Section>
+                        <Section className="p-4 pb-8">
+                            <SectionTitle>Projects</SectionTitle>
+                            <div className="flex flex-col gap-2">
+                                <Project
+                                    githubHref="https://github.com/mys1erious/portfolio-v1"
+                                    src="/projects/portfolio.png" alt="Portfolio"
+                                    skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}
+                                    name="Portfolio"
+                                    features={["Well, you are here right now..."]}
+                                />
                             </div>
                         </Section>
                     </div>
                     <div className="flex flex-col gap-y-4 lg:w-1/4">
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Languages</SectionTitle>
-                            <div className="flex flex-col gap-y-0.5 items-center">
+                            <div className="flex flex-col gap-y-0.5">
                                 <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
                                 <Language src="/countries/italy.svg" alt="IT" text="Italian" level="A2"/>
                                 <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
                                 <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
                             </div>
                         </Section>
-                        <Section className="p-4">
+                        <Section className="p-4 pb-8">
                             <SectionTitle>Interests</SectionTitle>
                             <div className="flex flex-col gap-4">
                                 <div className="flex gap-3 justify-center">
@@ -228,7 +301,7 @@ export default function Home() {
                             </div>
                         </Section>
                         <div className="flex flex-col">
-                            <div className="text-xs">(not available right now)</div>
+                            <div className="text-sm">(not available right now)</div>
                             <div className="flex justify-center items-center">
                                 <Portal/>
                             </div>

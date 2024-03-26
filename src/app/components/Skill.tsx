@@ -27,8 +27,9 @@ const Skill = ({
     const isHighlighted = skills.includes(skillName);
 
     return (
-        <div className={`${isHovered && isHighlighted ? 'transition-transform duration-200 ease-in-out scale-110' : ''}
-                         ${isHovered && !isHighlighted ? 'opacity-40' : ''}`
+        <div className={
+            `${isHovered && isHighlighted ? 'skill-orange-filter transition-transform duration-300 ease-in-out scale-110' : ''}` +
+            `${isHovered && !isHighlighted ? 'opacity-40' : ''}`
         }>
             <Icon src={src} alt={alt} href={href} width={width} height={height} text={text} scaleUpOnHover={scaleUpOnHover}
                   rounded={rounded} border={border} borderColor={borderColor}

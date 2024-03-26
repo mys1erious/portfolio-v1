@@ -1,5 +1,13 @@
-export const skillSize = 48;
+export const dateDiffInMonth = (d1: Date, d2: Date): number => {
+    let months;
+    months = (d2.getFullYear() - d1.getFullYear()) * 12;
+    months -= d1.getMonth();
+    months += d2.getMonth() + 1;
+    return months <= 0 ? 0 : months;
+};
 
+
+export const skillSize = 48;
 
 type languageProps = {
     index: number;
