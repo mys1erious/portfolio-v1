@@ -77,3 +77,8 @@ input[type='range'].range-slider::-moz-range-thumb {
     height: 20px;
     background: #ffffff;
 }
+
+
+.orange-filter:hover {
+    filter: brightness(0) saturate(100%) invert(35%) sepia(65%) saturate(5000%) hue-rotate(-8deg) brightness(100%) contrast(100%);
+}
