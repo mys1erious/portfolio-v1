@@ -4,7 +4,6 @@ import Image from "next/image";
 import Section from "@/app/components/Section";
 import Icon from "@/app/components/Icon";
 import SectionTitle from "@/app/components/SectionTitle";
-import Portal from "@/app/components/Portal";
 import Language from "@/app/components/Language";
 import BgVideo from "@/app/components/BgVideo";
 import BgVideoOpacityControl from "@/app/components/BgVideoOpacityControl";
@@ -300,12 +299,11 @@ export default function Home() {
                                 </div>
                             </div>
                         </Section>
-                        <div className="flex flex-col">
-                            <div className="text-sm">(not available right now)</div>
-                            <div className="flex justify-center items-center">
-                                <Portal/>
-                            </div>
-                        </div>
+                        <Icon href="https://portal.mys1erious.com/" src="/portal.gif" alt="Portal"
+                              text="Not available right now" width={200} height={200}
+                              scaleUpOnHover={false}
+                              placeholder="blur" blurDataURL="/portal_placeholder.png"
+                        />
                     </div>
                 </div>
             </div>

@@ -3,6 +3,7 @@
 import React from 'react';
 import Image from "next/image";
 import Link from "next/link";
+import {PlaceholderValue} from "next/dist/shared/lib/get-img-props";
 
 
 type IconProps = {
@@ -16,6 +17,8 @@ type IconProps = {
     rounded?: boolean;
     border?: boolean;
     borderColor?: string;
+    placeholder?: PlaceholderValue;
+    blurDataURL?: string;
 };
 
 
@@ -29,7 +32,9 @@ const Icon = ({
     scaleUpOnHover=true,
     rounded=false,
     border=false,
-    borderColor='border-gray-700'
+    borderColor='border-gray-700',
+    placeholder,
+    blurDataURL
 }: IconProps) => {
     const handleClick = (e: React.MouseEvent) => {
         if (!href) {
@@ -45,6 +50,7 @@ const Icon = ({
                            ` ${scaleUpOnHover ? 'hover:scale-125' : ''} ${rounded ? 'rounded-full' : ''}` +
                            ` ${border ? 'border ' + borderColor : ''}`}
                            src={src} alt={alt} width={width} height={height}
+                           placeholder={placeholder} blurDataURL={blurDataURL}
                     />
                     {text ?
                         <div className="absolute opacity-0 pointer-events-none bottom-full left-1/2 -translate-x-1/2
