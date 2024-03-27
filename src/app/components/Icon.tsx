@@ -19,6 +19,7 @@ type IconProps = {
     borderColor?: string;
     placeholder?: PlaceholderValue;
     blurDataURL?: string;
+    priority?: boolean;
 };
 
 
@@ -34,7 +35,8 @@ const Icon = ({
     border=false,
     borderColor='border-gray-700',
     placeholder,
-    blurDataURL
+    blurDataURL,
+    priority=false,
 }: IconProps) => {
     const handleClick = (e: React.MouseEvent) => {
         if (!href) {
@@ -51,6 +53,7 @@ const Icon = ({
                            ` ${border ? 'border ' + borderColor : ''}`}
                            src={src} alt={alt} width={width} height={height}
                            placeholder={placeholder} blurDataURL={blurDataURL}
+                           priority={priority}
                     />
                     {text ?
                         <div className="absolute opacity-0 pointer-events-none bottom-full left-1/2 -translate-x-1/2

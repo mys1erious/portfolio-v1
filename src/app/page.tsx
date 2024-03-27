@@ -182,7 +182,7 @@ export default function Home() {
                                     />
                                     <Skill href="https://www.postgresql.org/"
                                            skillName="postgres"
-                                           src="/skills/postgres2.png" alt="PostgresSQL"
+                                           src="/skills/postgres.png" alt="PostgresSQL"
                                            text="PostgresSQL" width={skillSize} height={skillSize}
                                     />
                                     <Skill href="https://redis.io/"
@@ -301,7 +301,7 @@ export default function Home() {
                         </Section>
                         <Icon href="https://portal.mys1erious.com/" src="/portal.gif" alt="Portal"
                               text="Not available right now" width={200} height={200}
-                              scaleUpOnHover={false}
+                              scaleUpOnHover={false} priority={true}
                               placeholder="blur" blurDataURL="/portal_placeholder.png"
                         />
                     </div>
