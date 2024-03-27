@@ -258,14 +258,39 @@ export default function Home() {
                             </div>
                         </Section>
                         <Section className="p-4 pb-8">
-                            <SectionTitle>Projects</SectionTitle>
+                            <SectionTitle>Pet Projects</SectionTitle>
                             <div className="flex flex-col gap-2">
                                 <Project
                                     githubHref="https://github.com/mys1erious/portfolio-v1"
                                     src="/projects/portfolio.png" alt="Portfolio"
                                     skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}
-                                    name="Portfolio"
-                                    features={["Well, you are here right now..."]}
+                                    name="Portfolio" date={new Date(2024, 2)}
+                                    features={["Main information about me"]}
+                                />
+                                <Project
+                                    githubHref="https://github.com/mys1erious/games-sales"
+                                    src="/projects/games_sales.png" alt="Games Sales"
+                                    skills={[
+                                        'python', 'django', 'drf', 'postgres', 'git', 'aws',
+                                        'docker', 'js', 'html', 'css', 'react', 'tailwind'
+                                    ]}
+                                    name="Games Sales" date={new Date(2022, 9)}
+                                    features={[
+                                        "Data analysis and filtering",
+                                        "Oauth and Google auth",
+                                        "Data Visualization with D3.js",
+                                        "Html/pdf reports generation",
+                                    ]}
+                                />
+                                <Project
+                                    githubHref="https://github.com/mys1erious/apex-buff-backend"
+                                    src="/projects/apex_buff.png" alt="Apex Buff"
+                                    skills={['python', 'django', 'drf', 'postgres', 'git']}
+                                    name="Apex Buff" date={new Date(2022, 6)}
+                                    features={[
+                                        "Legends, Weapons and User stats",
+                                        "Data scraping with selenium",
+                                    ]}
                                 />
                             </div>
                         </Section>
