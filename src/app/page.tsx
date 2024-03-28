@@ -262,6 +262,7 @@ export default function Home() {
                             <div className="flex flex-col gap-2">
                                 <Project
                                     githubHref="https://github.com/mys1erious/portfolio-v1"
+                                    href="https://www.mys1erious.com/"
                                     src="/projects/portfolio.png" alt="Portfolio"
                                     skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}
                                     name="Portfolio" date={new Date(2024, 2)}
@@ -269,6 +270,7 @@ export default function Home() {
                                 />
                                 <Project
                                     githubHref="https://github.com/mys1erious/games-sales"
+                                    href="https://games-sales.mys1erious.com/"
                                     src="/projects/games_sales.png" alt="Games Sales"
                                     skills={[
                                         'python', 'django', 'drf', 'postgres', 'git', 'aws',
@@ -284,6 +286,7 @@ export default function Home() {
                                 />
                                 <Project
                                     githubHref="https://github.com/mys1erious/apex-buff-backend"
+                                    href="https://github.com/mys1erious/apex-buff-backend"
                                     src="/projects/apex_buff.png" alt="Apex Buff"
                                     skills={['python', 'django', 'drf', 'postgres', 'git']}
                                     name="Apex Buff" date={new Date(2022, 6)}
