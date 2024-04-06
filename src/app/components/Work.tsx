@@ -16,6 +16,7 @@ type WorkExperienceProps = {
     type: string;
     dateFrom: Date;
     dateTo: Date;
+    dateToAsPresent?: boolean;
     location: string;
     features?: string[];
     description?: ReactNode;
@@ -33,6 +34,7 @@ const Work = ({
     type,
     dateFrom,
     dateTo,
+    dateToAsPresent=false,
     location,
     features=[],
     description,
@@ -65,7 +67,7 @@ const Work = ({
                     </div>
                     <div className="flex flex-col items-start text-sm text-gray-400">
                         <div>{location}</div>
-                        <div>{getDate(dateFrom)} - {getDate(dateTo)}</div>
+                        <div>{getDate(dateFrom)} - {dateToAsPresent ? 'Present' : getDate(dateTo)}</div>
                         <div>{dateDiffInMonth(dateFrom, dateTo)} mos</div>
                     </div>
                     <ul className="flex flex-col items-start italic">

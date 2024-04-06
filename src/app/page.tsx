@@ -117,6 +117,7 @@ export default function Home() {
                                     type="Full-time"
                                     dateFrom={new Date(2023, 2)}
                                     dateTo={new Date()}
+                                    dateToAsPresent={true}
                                     location="Italy, Milan, Remote"
                                     features={[
                                         'New features',
