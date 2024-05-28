@@ -259,16 +259,16 @@ export default function Home() {
                             </div>
                         </Section>
                         <Section className="p-4 pb-8">
-                            <SectionTitle>Pet Projects</SectionTitle>
+                            <SectionTitle>Projects</SectionTitle>
                             <div className="flex flex-col gap-2">
-                                <Project
-                                    githubHref="https://github.com/mys1erious/portfolio-v1"
-                                    href="https://www.mys1erious.com/"
-                                    src="/projects/portfolio.png" alt="Portfolio"
-                                    skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}
-                                    name="Portfolio" date={new Date(2024, 2)}
-                                    features={["Main information about me"]}
-                                />
+                                {/*<Project*/}
+                                {/*    githubHref="https://github.com/mys1erious/portfolio-v1"*/}
+                                {/*    href="https://www.mys1erious.com/"*/}
+                                {/*    src="/projects/portfolio.png" alt="Portfolio"*/}
+                                {/*    skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}*/}
+                                {/*    name="Portfolio" date={new Date(2024, 2)}*/}
+                                {/*    features={["Main information about me"]}*/}
+                                {/*/>*/}
                                 <Project
                                     githubHref="https://github.com/mys1erious/games-sales"
                                     href="https://games-sales.mys1erious.com/"
@@ -328,11 +328,11 @@ export default function Home() {
                                 </div>
                             </div>
                         </Section>
-                        <Icon href="https://portal.mys1erious.com/" src="/portal.gif" alt="Portal"
-                              text="Not available right now" width={200} height={200}
-                              scaleUpOnHover={false} priority={true}
-                              placeholder="blur" blurDataURL="/portal_placeholder.png"
-                        />
+                        {/*<Icon href="https://portal.mys1erious.com/" src="/portal.gif" alt="Portal"*/}
+                        {/*      text="Not available right now" width={200} height={200}*/}
+                        {/*      scaleUpOnHover={false} priority={true}*/}
+                        {/*      placeholder="blur" blurDataURL="/portal_placeholder.png"*/}
+                        {/*/>*/}
                     </div>
                 </div>
             </div>
