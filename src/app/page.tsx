@@ -20,7 +20,7 @@ export default function Home() {
     return (
         <main className="main-bg before:fixed before:top-0 before:right-0 before:bottom-0 before:left-0 before:z-[-2]
             min-h-screen text-white text-center overflow-x-hidden">
-            <BgVideo />
+            <BgVideo/>
             <div className="hanging-sign-container">
                 <Image className="hanging-sign"
                        src="/mys1erious_sign.png" alt="mys1erious sign"
@@ -49,8 +49,9 @@ export default function Home() {
                                       src="/socials/goodreads.png" alt="Goodreads"
                                       text="@Mys1erious"
                                 />
-                                <Icon href="https://drive.google.com/file/d/1RXG-YH62S_vVHWVVL2B5z8R9j1xgYdCp/view?usp=sharing"
-                                      width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
+                                <Icon
+                                    href="https://drive.google.com/file/d/1RXG-YH62S_vVHWVVL2B5z8R9j1xgYdCp/view?usp=sharing"
+                                    width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
                                 />
                                 <Icon href="mailto:yevhenii.lavrinovych@gmail.com"
                                       src="/socials/email.png" alt="Email"
@@ -124,6 +125,10 @@ export default function Home() {
                                         'Code-base improvement',
                                         'Performance optimization',
                                     ]}
+                                    description="
+                                        One of the recent features i implemented is the integration of Google Document AI,
+                                        Vertex AI and Vision AI into document management system and a multilingual
+                                        full-text search for the data returned by these AI models"
                                 />
                                 <Work
                                     href="https://www.linkedin.com/company/meduzzen/"
@@ -258,6 +263,17 @@ export default function Home() {
                                 </div>
                             </div>
                         </Section>
+                    </div>
+                    <div className="flex flex-col gap-y-4 lg:w-1/4">
+                        <Section className="p-4 pb-8">
+                            <SectionTitle>Languages</SectionTitle>
+                            <div className="flex flex-col gap-y-0.5">
+                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
+                                <Language src="/countries/italy.svg" alt="IT" text="Italian" level="A2"/>
+                                <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
+                                <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
+                            </div>
+                        </Section>
                         <Section className="p-4 pb-8">
                             <SectionTitle>Projects</SectionTitle>
                             <div className="flex flex-col gap-2">
@@ -296,17 +312,6 @@ export default function Home() {
                                         "Data scraping with selenium",
                                     ]}
                                 />
-                            </div>
-                        </Section>
-                    </div>
-                    <div className="flex flex-col gap-y-4 lg:w-1/4">
-                        <Section className="p-4 pb-8">
-                            <SectionTitle>Languages</SectionTitle>
-                            <div className="flex flex-col gap-y-0.5">
-                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
-                                <Language src="/countries/italy.svg" alt="IT" text="Italian" level="A2"/>
-                                <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
-                                <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
                             </div>
                         </Section>
                         <Section className="p-4 pb-8">
