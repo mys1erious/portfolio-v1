@@ -49,7 +49,7 @@ const Work = ({
              onMouseEnter={() => setSkills(skills)} onMouseLeave={resetSkills}
         >
             <div className="flex gap-3 items-start">
-                <div className="mt-2">
+                <div className="mt-2 flex-shrink-0">
                     <Icon src={src} alt={alt} href={href} text={name} width={64} rounded={true} scaleUpOnHover={false}/>
                 </div>
                 <div className="flex flex-col items-start">
@@ -75,6 +75,7 @@ const Work = ({
                             <li key={index}>&#8226; {feature}</li>
                         ))}
                     </ul>
+                    <div></div>
                     <div className="text-sm text-gray-400 italic">
                         {description}
                     </div>
