@@ -50,7 +50,7 @@ export default function Home() {
                                       text="@Mys1erious"
                                 />
                                 <Icon
-                                    href="https://drive.google.com/file/d/1RXG-YH62S_vVHWVVL2B5z8R9j1xgYdCp/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/1CuR6QHWTRnAgHjjrmg09i1JBfS0IjcbR/view?usp=sharing"
                                     width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
                                 />
                                 <Icon href="mailto:yevhenii.lavrinovych@gmail.com"
@@ -110,6 +110,26 @@ export default function Home() {
                                     href="https://www.linkedin.com/company/adentis-italia/"
                                     src="/companies/adentis.jpeg" alt="Adentis"
                                     skills={[
+                                        'python', 'fastapi', 'flask', 'postgres', 'git',
+                                        'docker', 'js', 'html', 'css',
+                                    ]}
+                                    position="IoT Fullstack Developer"
+                                    name="Adentis Italia"
+                                    type="Full-time"
+                                    dateFrom={new Date(2024, 6)}
+                                    dateTo={new Date()}
+                                    dateToAsPresent={true}
+                                    location="Italy, Milan, Remote"
+                                    features={[
+                                        'Encryption & signing of digital credential badges',
+                                        'Various 3rd party credential systems (Passkit, Legic) integration into centralized credentials MS',
+                                        'Beacons for iphones and nfc readers',
+                                    ]}
+                                />
+                                <Work
+                                    href="https://www.linkedin.com/company/adentis-italia/"
+                                    src="/companies/adentis.jpeg" alt="Adentis"
+                                    skills={[
                                         'python', 'django', 'drf', 'postgres', 'redis', 'git',
                                         'docker', 'google_cloud', 'js', 'html', 'css', 'extjs'
                                     ]}
@@ -117,8 +137,7 @@ export default function Home() {
                                     name="Adentis Italia"
                                     type="Full-time"
                                     dateFrom={new Date(2023, 2)}
-                                    dateTo={new Date()}
-                                    dateToAsPresent={true}
+                                    dateTo={new Date(2024, 7)}
                                     location="Italy, Milan, Remote"
                                     features={[
                                         'New features',
@@ -185,6 +204,11 @@ export default function Home() {
                                            skillName="fastapi"
                                            src="/skills/fastapi.png" alt="FastAPI"
                                            text="FastAPI" width={skillSize} height={skillSize}
+                                    />
+                                    <Skill href="https://flask.palletsprojects.com/"
+                                           skillName="flask"
+                                           src="/skills/flask.png" alt="Flask"
+                                           text="Flask" width={skillSize} height={skillSize}
                                     />
                                     <Skill href="https://www.postgresql.org/"
                                            skillName="postgres"
@@ -268,8 +292,8 @@ export default function Home() {
                         <Section className="p-4 pb-8">
                             <SectionTitle>Languages</SectionTitle>
                             <div className="flex flex-col gap-y-0.5">
-                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
-                                <Language src="/countries/italy.svg" alt="IT" text="Italian" level="A2"/>
+                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C2"/>
+                                <Language src="/countries/italy.svg" alt="IT" text="Italian" level="B"/>
                                 <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
                                 <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
                             </div>
@@ -277,14 +301,18 @@ export default function Home() {
                         <Section className="p-4 pb-8">
                             <SectionTitle>Projects</SectionTitle>
                             <div className="flex flex-col gap-2">
-                                {/*<Project*/}
-                                {/*    githubHref="https://github.com/mys1erious/portfolio-v1"*/}
-                                {/*    href="https://www.mys1erious.com/"*/}
-                                {/*    src="/projects/portfolio.png" alt="Portfolio"*/}
-                                {/*    skills={['git', 'ts', 'html', 'css', 'react', 'nextjs', 'tailwind']}*/}
-                                {/*    name="Portfolio" date={new Date(2024, 2)}*/}
-                                {/*    features={["Main information about me"]}*/}
-                                {/*/>*/}
+                                <Project
+                                    githubHref="https://github.com/mys1erious/ml-with-pytorch-raschka"
+                                    href="https://github.com/mys1erious/ml-with-pytorch-raschka"
+                                    src="/projects/ml.png" alt="Raschka ML"
+                                    skills={[
+                                        "python"
+                                    ]}
+                                    name="Raschka ML" date={new Date(2024, 7)}
+                                    features={[
+                                        "Core ML/DL",
+                                    ]}
+                                />
                                 <Project
                                     githubHref="https://github.com/mys1erious/games-sales"
                                     href="https://games-sales.mys1erious.com/"
