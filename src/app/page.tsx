@@ -50,7 +50,7 @@ export default function Home() {
                                       text="@Mys1erious"
                                 />
                                 <Icon
-                                    href="https://drive.google.com/file/d/1CuR6QHWTRnAgHjjrmg09i1JBfS0IjcbR/view?usp=sharing"
+                                    href="https://drive.google.com/file/d/175nhyFrv6wXgumZvVSJTVAcuyKbFfX3t/view?usp=sharing"
                                     width={19} src="/socials/pdf.png" alt="PDF" text="PDF"
                                 />
                                 <Icon href="mailto:yevhenii.lavrinovych@gmail.com"
@@ -72,7 +72,7 @@ export default function Home() {
                                       scaleUpOnHover={false} rounded={true}
                                 />
                                 <div className="text-xl">Yevhenii Lavrinovych</div>
-                                <div className="text-lg">Software Developer</div>
+                                <div className="text-lg">Engineer</div>
                             </div>
                         </Section>
                         <Section className="p-4 pb-8">
@@ -107,6 +107,25 @@ export default function Home() {
                             <SectionTitle>Work Experience</SectionTitle>
                             <div className="flex flex-col gap-2">
                                 <Work
+                                    href="https://www.linkedin.com/company/datasparkai/"
+                                    src="/companies/dataspark.jpeg" alt="DataSpark"
+                                    skills={[
+                                        'python', 'fastapi', 'postgres', 'git', 'docker', 'azure', 'ts', 'next',
+                                        'agenticai', 'rag', 'qdrant'
+                                    ]}
+                                    position="Engineer"
+                                    name="DataSpark"
+                                    type="Flexible"
+                                    dateFrom={new Date(2024, 10)}
+                                    dateTo={new Date()}
+                                    dateToAsPresent={true}
+                                    location="Italy, Milan, Remote"
+                                    features={[
+                                        'Researching, designing and building core agentic system',
+                                        'Meetings with prospects/clients, collection of requirements development of demos/POC',
+                                        ]}
+                                />
+                                <Work
                                     href="https://www.linkedin.com/company/adentis-italia/"
                                     src="/companies/adentis.jpeg" alt="Adentis"
                                     skills={[
@@ -121,9 +140,9 @@ export default function Home() {
                                     dateToAsPresent={true}
                                     location="Italy, Milan, Remote"
                                     features={[
-                                        'Encryption & signing of digital credential badges',
-                                        'Various 3rd party credential systems (Passkit, Legic) integration into centralized credentials MS',
-                                        'Beacons for iphones and nfc readers',
+                                        'Proposed and lead an R&D project to develop a chatbot assistant for the internal IoT-related knowledge base',
+                                        'Implemented encryption & signing of digital credential badges',
+                                        'Implemented and integrated various credential types (Passkit, Legic, Apple/Google Wallets, Any2Any, PassNinja, TOTP) into centralized credentials MS',
                                     ]}
                                 />
                                 <Work
@@ -140,14 +159,12 @@ export default function Home() {
                                     dateTo={new Date(2024, 7)}
                                     location="Italy, Milan, Remote"
                                     features={[
-                                        'New features',
-                                        'Code-base improvement',
+                                        'Implementation of various new features',
                                         'Performance optimization',
+                                        'Debugging, code-base improvement',
+                                        'Integrated GC AI services to analyze documents in DMS' +
+                                        'Implemented multilingual Full-Text Search for DMS',
                                     ]}
-                                    description="
-                                        One of the recent features i implemented is the integration of Google Document AI,
-                                        Vertex AI and Vision AI into document management system and a multilingual
-                                        full-text search for the data returned by these AI models"
                                 />
                                 <Work
                                     href="https://www.linkedin.com/company/meduzzen/"
@@ -205,11 +222,11 @@ export default function Home() {
                                            src="/skills/fastapi.png" alt="FastAPI"
                                            text="FastAPI" width={skillSize} height={skillSize}
                                     />
-                                    <Skill href="https://flask.palletsprojects.com/"
-                                           skillName="flask"
-                                           src="/skills/flask.png" alt="Flask"
-                                           text="Flask" width={skillSize} height={skillSize}
-                                    />
+                                    {/*<Skill href="https://flask.palletsprojects.com/"*/}
+                                    {/*       skillName="flask"*/}
+                                    {/*       src="/skills/flask.png" alt="Flask"*/}
+                                    {/*       text="Flask" width={skillSize} height={skillSize}*/}
+                                    {/*/>*/}
                                     <Skill href="https://www.postgresql.org/"
                                            skillName="postgres"
                                            src="/skills/postgres.png" alt="PostgresSQL"
@@ -292,7 +309,7 @@ export default function Home() {
                         <Section className="p-4 pb-8">
                             <SectionTitle>Languages</SectionTitle>
                             <div className="flex flex-col gap-y-0.5">
-                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C2"/>
+                                <Language src="/countries/uk.svg" alt="UK" text="English" level="C1"/>
                                 <Language src="/countries/italy.svg" alt="IT" text="Italian" level="B"/>
                                 <Language src="/countries/ukraine.svg" alt="UA" text="Ukrainian" level="C2"/>
                                 <Language src="/countries/russia.svg" alt="RU" text="Russian" level="C2"/>
@@ -351,9 +368,6 @@ export default function Home() {
                                     />
                                     <Icon src="/interests/sport.png" alt="Sport"
                                           width={54} text="Sport"
-                                    />
-                                    <Icon src="/interests/running.png" alt="Running"
-                                          width={45} text="Running"
                                     />
                                     <Icon src="/interests/scifi.png" alt="Sci-fi"
                                           width={36} text="Sci-fi & Future"

@@ -68,7 +68,7 @@ const Work = ({
                     <div className="flex flex-col items-start text-sm text-gray-400">
                         <div>{location}</div>
                         <div>{getDate(dateFrom)} - {dateToAsPresent ? 'Present' : getDate(dateTo)}</div>
-                        <div>{dateDiffInMonth(dateFrom, dateTo)} mos</div>
+                        {/*<div>{dateDiffInMonth(dateFrom, dateTo)} mos</div>*/}
                     </div>
                     <ul className="flex flex-col items-start italic">
                         {features.map((feature, index) => (
